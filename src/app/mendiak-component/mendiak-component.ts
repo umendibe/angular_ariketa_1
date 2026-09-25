@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   imports: [],
@@ -6,4 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './mendiak-component.css',
   templateUrl: './mendiak-component.html',
 })
-export class MendiakComponent {}
+export class MendiakComponent {
+  @Input() argazkia = '';
+  @Input() tamaina = '';
+  @Input() kolorea = '';
+  @Input() izena = '';
+}

@@ -1,15 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ARIKETA</title>
-</head>
-<body>
-    <app-mendiak-component></app-mendiak-component>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ARIKETA</title>
+    </head>
+
+    <app-header-component></app-header-component>
+
+    <body>
+        <main>
+            <app-hasiera-component></app-hasiera-component>
+
+            <div class="d-flex justify-content-center my-4">
+                <h2 class="text-success">Gure Ibilbide Nabarmenak</h2>
+            </div>
+
+            <div class="row g-4 justify-content-center mx-auto" style="max-width: 1000px;">
+                <app-mendiak-component class="col-12 col-md-4 d-flex"
+                    argazkia="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx3Rf7ggAM3xpPyIQn9MxA5LDEsCiEJGeYXXnYP0Aiag&s=10"
+                    izena="Gorbeiako Parkea" tamaina="Ertaina"
+                    kolorea="btn btn-sm btn-success pe-none"></app-mendiak-component>
+
+                <app-mendiak-component class="col-12 col-md-4 d-flex"
+                    izena="Aizkorriko Arista"
+                    argazkia="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCeYyL1Xv9jRQ_lhk2fGVwA93H0l_CIxn9EflBw7dreQ&s=10"
+                    tamaina="Oso Zaila"
+                    kolorea="btn btn-sm btn-danger pe-none"></app-mendiak-component>
+
+                <app-mendiak-component class="col-12 col-md-4 d-flex"
+                    argazkia="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAWrKjoqvM9-bv1b9gCw93-VgnZv5RHJq6VLaCR7gfkQ&s=10"
+                    izena="Urbasa eta Urederra" tamaina="Erraza / Familian"
+                    kolorea="btn btn-sm btn-primary pe-none"></app-mendiak-component>
+            </div>
+
+            <h2 class="text-center my-4">Tarifak eta Taldeak</h2>
+
+            <app-tarifak-component></app-tarifak-component>
+
+            <app-info-gehio-component></app-info-gehio-component>
+
+        </main>
+
+    </body>
 </html>
-
-
-
-
